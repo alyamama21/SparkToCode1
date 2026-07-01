@@ -35,6 +35,9 @@
             double width = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Area of the rectangle: " + (length * width) , "Perimeter = 2 * (length * width)");
+            ///////////////////////////////////
+
+            //Task 3- Even or Odd Checker
 
         }
     }
