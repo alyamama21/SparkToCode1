@@ -58,23 +58,54 @@
             ///////////////////////////////
             //4-Voting Eligibility
             //some code to solve problem
-            Console.WriteLine("Enter your age : ");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your age : ");
+            //int age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Do you have a valid national identity card ? (true/false) : ");
-            bool hasIDCard = bool.Parse(Console.ReadLine());
+            //Console.WriteLine("Do you have a valid national identity card ? (true/false) : ");
+            //bool hasIDCard = bool.Parse(Console.ReadLine());
 
-            if (age >= 18 && hasIDCard)
+            //if (age >= 18 && hasIDCard)
+            //{
+            //    Console.WriteLine("You are eligible to vote.");
+            //}
+            //else if (age <= 18 && hasIDCard)
+            //{
+            //    Console.WriteLine("You are not eligible to vote.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are not eligible to vote.");
+            //}
+            ///////////////////////////////
+            //5-Voting Eligibility
+            //some code to solve problem
+            Console.WriteLine("Enter a single character grade letter ('A', 'B' , 'C' , 'D' OR 'F'): ");
+            String gradeLetter = Console.ReadLine().ToUpper();
+
+            if (gradeLetter == "A")
             {
-                Console.WriteLine("You are eligible to vote.");
+                Console.WriteLine("Excellent");
             }
-            else if (age <= 18 && hasIDCard)
+            else if (gradeLetter == "B")
             {
-                Console.WriteLine("You are not eligible to vote.");
+                Console.WriteLine("Good");
+            }
+            else if (gradeLetter == "C")
+            {
+                Console.WriteLine("Average");
+            }
+            else if (gradeLetter == "D")
+            {
+                Console.WriteLine("Below Average");
+            }
+            else if (gradeLetter == "F")
+            {
+                Console.WriteLine("Failing");
             }
             else
             {
-                Console.WriteLine("You are not eligible to vote.");
+                Console.WriteLine("Invalid grade letter.");
+
             }
         }
     }
