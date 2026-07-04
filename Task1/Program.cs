@@ -13,13 +13,13 @@ namespace Task1
 
 
             //Task 2- Rectangle Calculator
-            //Console.WriteLine("Enter the length of the rectangle: ");
-            //double length = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the length of the rectangle: ");
+            double length = double.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Enter the width of the rectangle: ");
-            //double width = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the width of the rectangle: ");
+            double width = double.Parse(Console.ReadLine());
 
-            //Console.WriteLine("Area of the rectangle: " + (length * width) , "Perimeter = 2 * (length * width)");
+            Console.WriteLine("Area of the rectangle: " + (length * width), "Perimeter = 2 * (length * width)");
             ///////////////////////////////////
 
             //Task 3- Even or Odd Checker
