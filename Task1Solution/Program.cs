@@ -39,21 +39,42 @@
             ///////////////////////////////
             //3-Even or Odd Checker
             //some code to solve problem
-            Console.WriteLine("Enter a Whole Number :");
-            int number = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter a Whole Number :");
+            //int number = int.Parse(Console.ReadLine());
 
-            if (number % 2 == 0)
+            //if (number % 2 == 0)
+            //{
+            //    Console.WriteLine("The number is Even.");
+            //}
+            //else if (number % 2 == 1)
+            //{
+            //    Console.WriteLine("The number is Odd.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The number is neither Even nor Odd.");
+
+            //}
+            ///////////////////////////////
+            //4-Voting Eligibility
+            //some code to solve problem
+            Console.WriteLine("Enter your age : ");
+            int age = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Do you have a valid national identity card ? (true/false) : ");
+            bool hasIDCard = bool.Parse(Console.ReadLine());
+
+            if (age >= 18 && hasIDCard)
             {
-                Console.WriteLine("The number is Even.");
+                Console.WriteLine("You are eligible to vote.");
             }
-            else if (number % 2 == 1)
+            else if (age <= 18 && hasIDCard)
             {
-                Console.WriteLine("The number is Odd.");
+                Console.WriteLine("You are not eligible to vote.");
             }
             else
             {
-                Console.WriteLine("The number is neither Even nor Odd.");
-
+                Console.WriteLine("You are not eligible to vote.");
             }
         }
     }
