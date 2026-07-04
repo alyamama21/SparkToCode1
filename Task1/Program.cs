@@ -8,24 +8,7 @@ namespace Task1
         {
             // Task 1 - Personal Info Card
 
-            //Console.WriteLine(" Enter Your Name: ");
-            //string userName = Console.ReadLine();
 
-            //Console.WriteLine("Enter Your Age: ");
-            //int userAge = int.Parse(Console.ReadLine());
-
-            //Console.WriteLine("Enter Your Hight: ");
-            //double userHeight = double.Parse(Console.ReadLine());
-
-            //Console.Write("Are you a student? (true/false): ");
-            //bool isStudent = bool.Parse(Console.ReadLine());
-
-            //Console.WriteLine();
-            //Console.WriteLine("---Personal Info Card---");
-            //Console.WriteLine($" Name: {userName} " +
-            //    $" Age: {userAge}" +
-            //    $" Hight: {userHeight} " +
-            //    $" Status: Student ");
             ///////////////////////////////
 
 
@@ -109,28 +92,28 @@ namespace Task1
             // }
             ///////////////////////////////
             // Task 6- Temperature Converter
-        //    Console.WriteLine("Enter a temperature in Celsius : ");
-        //    double celsius = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Enter a temperature in Celsius : ");
+            //    double celsius = double.Parse(Console.ReadLine());
 
-        //    Console.WriteLine("convert it to Fahrenheit :");
-        //    double fahrenheit = (celsius * 9 / 5) + 32;
+            //    Console.WriteLine("convert it to Fahrenheit :");
+            //    double fahrenheit = (celsius * 9 / 5) + 32;
 
-        //    if (fahrenheit < 10)
-        //    {
-        //        Console.WriteLine("The temperature is Cold");
-        //    }
-        //    else if (fahrenheit <= 10 && fahrenheit <= 30)
-        //    {
-        //        Console.WriteLine("The temperature is Mild.");
-        //    }
-        //    else if (fahrenheit >= 30)
-        //    {
-        //        Console.WriteLine("The temperature is Hot.");
-        //    }
-        //    else
-        //    {
-        //        Console.WriteLine("The temperature is above boiling point.");
-        //}
+            //    if (fahrenheit < 10)
+            //    {
+            //        Console.WriteLine("The temperature is Cold");
+            //    }
+            //    else if (fahrenheit <= 10 && fahrenheit <= 30)
+            //    {
+            //        Console.WriteLine("The temperature is Mild.");
+            //    }
+            //    else if (fahrenheit >= 30)
+            //    {
+            //        Console.WriteLine("The temperature is Hot.");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("The temperature is above boiling point.");
+            //}
         }
 
     }
