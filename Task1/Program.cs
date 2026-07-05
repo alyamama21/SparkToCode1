@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics.Metrics;
 using System.Xml.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Task1
 {
@@ -118,33 +119,70 @@ namespace Task1
             ////////////////////////////
             //Task 7- Movie Ticket Pricing
             //some code to solvr problem
-            Console.WriteLine("Enter your age: ");
-            int age = int.Parse(Console.ReadLine());
-            double price;
-            string category;
+            //Console.WriteLine("Enter your age: ");
+            //int age = int.Parse(Console.ReadLine());
+            //double price;
+            //string category;
 
-            if (age >= 0 && age <= 12)
+            //if (age >= 0 && age <= 12)
+            //{
+            //    category = "Children";
+            //    price = 2.000;
+            //}
+            //else if (age >= 13 && age <= 59)
+            //{
+            //    category = "Adults";
+            //    price = 5.000;
+            //}
+            //else if (age >= 60)
+            //{
+            //    category = "Seniors";
+            //    price = 3.000;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid age entered.");
+            //    return;
+            //}
+
+            //Console.WriteLine($"{category} — Price: {price.ToString("F3")} OMR");
+
+            ////////////////////////////
+            //Task 8-  Restaurant Bill with Membership Discount
+            //some code to solvr problem
+
+            Console.WriteLine("Enter your total bill amount (OMR): ");
+            double totalBill = double.Parse(Console.ReadLine());
+
+            
+            Console.WriteLine("Are you a loyalty member? (yes/no): ");
+            string memberInput = Console.ReadLine().Trim().ToLower();
+
+            
+            bool isMember = (memberInput == "yes" || memberInput == "true");
+
+            double discount = 0;
+
+            
+            if (totalBill > 20 && isMember)
             {
-                category = "Children";
-                price = 2.000;
-            }
-            else if (age >= 13 && age <= 59)
-            {
-                category = "Adults";
-                price = 5.000;
-            }
-            else if (age >= 60)
-            {
-                category = "Seniors";
-                price = 3.000;
+                discount = totalBill * 0.15;
             }
             else
             {
-                Console.WriteLine("Invalid age entered.");
-                return;
+                discount = 0;
             }
+            double finalAmount = totalBill - discount;
 
-            Console.WriteLine($"{category} — Price: {price.ToString("F3")} OMR");
+            Console.WriteLine("\n--- Receipt ---");
+            Console.WriteLine($"Original Bill:   {totalBill:F3} OMR");
+            Console.WriteLine($"Discount Amount: {discount:F3} OMR");
+            Console.WriteLine($"Final Amount:    {finalAmount:F3} OMR");
+
+            
+
+
+
         }
 
     }
