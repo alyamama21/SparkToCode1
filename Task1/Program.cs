@@ -248,27 +248,52 @@ namespace Task1
             //Task 11-    Loan Eligibility System
             //some code to solvr problem
 
-            Console.WriteLine("Enter your Age : ");
-            int age = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Age : ");
+            //int age = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter your Monthly : ");
-            int monthlyIncome = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter your Monthly : ");
+            //int monthlyIncome = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Do you have a current loan? (true/false) : ");
-            bool hasCurrentLoan = bool.Parse(Console.ReadLine());
+            //Console.WriteLine("Do you have a current loan? (true/false) : ");
+            //bool hasCurrentLoan = bool.Parse(Console.ReadLine());
 
-            if (age >= 21 && age <= 60 && monthlyIncome >= 400 && !hasCurrentLoan)
+            //if (age >= 21 && age <= 60 && monthlyIncome >= 400 && !hasCurrentLoan)
+            //{
+            //    Console.WriteLine("You are eligible for a loan.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("You are not eligible for a loan.");
+
+
+            //}
+            ////////////////////////////
+            //Task 12-    Shipping Cost Calculator
+            //some code to solvr problem
+
+            Console.WriteLine("Enter a region code ('A' for local , 'B' for national AND 'C' for international): ");
+            char regionCode = char.Parse(Console.ReadLine().ToUpper());
+
+            switch (regionCode)
             {
-                Console.WriteLine("You are eligible for a loan.");
-            }
-            else
-            {
-                Console.WriteLine("You are not eligible for a loan.");
+                case 'A':
+                    Console.WriteLine("Shipping cost for local region is 1.000 OMR.");
+                    break;
+                case 'B':
+                    Console.WriteLine("Shipping cost for local region is 3.000 OMR.");
+                    break;
+                case 'C':
+                    Console.WriteLine("Shipping cost for local region is 7.000 OMR.");
+                    break;
+                default:
+                    Console.WriteLine("Unknown region code. Please enter a valid region code ('A', 'B', or 'C').");
+                    break;
 
 
+
             }
+
         }
-
     }
 }
     
