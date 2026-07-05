@@ -227,8 +227,8 @@ namespace Task1
             //int num2 = int.Parse(Console.ReadLine());
 
             //switch (op)
-            //    {
-            //case '+':
+            //{
+            //    case '+':
             //        Console.WriteLine("Addition: " + (num1 + num2));
             //        break;
             //    case '-':
@@ -271,31 +271,77 @@ namespace Task1
             //Task 12-    Shipping Cost Calculator
             //some code to solvr problem
 
-            Console.WriteLine("Enter a region code ('A' for local , 'B' for national AND 'C' for international): ");
-            char regionCode = char.Parse(Console.ReadLine().ToUpper());
+            //Console.WriteLine("Enter a region code ('A' for local , 'B' for national AND 'C' for international): ");
+            //char regionCode = char.Parse(Console.ReadLine().ToUpper());
 
-            switch (regionCode)
+            //switch (regionCode)
+            //{
+            //    case 'A':
+            //        Console.WriteLine("Shipping cost for local region is 1.000 OMR.");
+            //        break;
+            //    case 'B':
+            //        Console.WriteLine("Shipping cost for local region is 3.000 OMR.");
+            //        break;
+            //    case 'C':
+            //        Console.WriteLine("Shipping cost for local region is 7.000 OMR.");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Unknown region code. Please enter a valid region code ('A', 'B', or 'C').");
+            //        break;
+            //}
+
+            ////////////////////////////
+            //Task 13-    Triangle Type Classifier
+            //some code to solvr problem
+            Console.WriteLine("Enter the length of the first side of the triangle: ");
+            double side1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the length of the second side of the triangle: ");
+            double side2 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the length of the third side of the traiangle: ");
+            double side3 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Doed it form a triangle? (true/false) : if true classify its type");
+            bool isTriangle = bool.Parse(Console.ReadLine());
+
+            if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
+           
             {
-                case 'A':
-                    Console.WriteLine("Shipping cost for local region is 1.000 OMR.");
-                    break;
-                case 'B':
-                    Console.WriteLine("Shipping cost for local region is 3.000 OMR.");
-                    break;
-                case 'C':
-                    Console.WriteLine("Shipping cost for local region is 7.000 OMR.");
-                    break;
-                default:
-                    Console.WriteLine("Unknown region code. Please enter a valid region code ('A', 'B', or 'C').");
-                    break;
+                Console.WriteLine("\nThese sides form a valid triangle.");
 
-
-
+                
+                if (side1 == side2 && side2 == side3)
+                {
+                    Console.WriteLine("Type: Equilateral (all sides are equal).");
+                }
+                else
+                {
+                    
+                    if (side1 == side2 || side1 == side3 || side2 == side3)
+                    {
+                        Console.WriteLine("Type: Isosceles (exactly two sides are equal).");
+                    }
+                    else
+                    {
+                        
+                        Console.WriteLine("Type: Scalene (all sides are different).");
+                    }
+                }
+            }
+            else
+            {
+                
+                Console.WriteLine("\nError: These lengths do not form a valid triangle.");
             }
 
+
+
+
+        }
         }
     }
-}
+
     
 
 
