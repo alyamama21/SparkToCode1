@@ -293,47 +293,99 @@ namespace Task1
             ////////////////////////////
             //Task 13-    Triangle Type Classifier
             //some code to solvr problem
-            Console.WriteLine("Enter the length of the first side of the triangle: ");
-            double side1 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the length of the first side of the triangle: ");
+            //double side1 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the length of the second side of the triangle: ");
-            double side2 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the length of the second side of the triangle: ");
+            //double side2 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter the length of the third side of the traiangle: ");
-            double side3 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the length of the third side of the traiangle: ");
+            //double side3 = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("Doed it form a triangle? (true/false) : if true classify its type");
-            bool isTriangle = bool.Parse(Console.ReadLine());
+            //Console.WriteLine("Doed it form a triangle? (true/false) : if true classify its type");
+            //bool isTriangle = bool.Parse(Console.ReadLine());
 
-            if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
-           
-            {
-                Console.WriteLine("\nThese sides form a valid triangle.");
+            //if ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
+
+            //{
+            //    Console.WriteLine("\nThese sides form a valid triangle.");
+
+
+            //    if (side1 == side2 && side2 == side3)
+            //    {
+            //        Console.WriteLine("Type: Equilateral (all sides are equal).");
+            //    }
+            //    else
+            //    {
+
+            //        if (side1 == side2 || side1 == side3 || side2 == side3)
+            //        {
+            //            Console.WriteLine("Type: Isosceles (exactly two sides are equal).");
+            //        }
+            //        else
+            //        {
+
+            //            Console.WriteLine("Type: Scalene (all sides are different).");
+            //        }
+            //    }
+            //}
+            //else
+            //{
+
+            //    Console.WriteLine("\nError: These lengths do not form a valid triangle.");
+            //}
+
+            ////////////////////////////
+            //Task 14-    Online Store Checkout
+            //some code to solvr problem
+            //Console.WriteLine("Enter your product code ( 1 , 2 OR 3 ) :");
+            //int Procode = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Do you have a discount coupon? (yes/no) : ");
+            //bool hasCoupon = Console.ReadLine().Trim().ToLower() == "yes";
+
+            //string Tools = "";
+            //double Price = 0;
+
+            
+            //switch (Procode)
+            //{
+            //    case 1:
+            //        Tools = "Headphones";
+            //        Price = 8.500;
+            //        break;
+            //    case 2:
+            //        Tools = "Keyboard";
+            //        Price = 5.000;
+            //        break;
+            //    case 3:
+            //        Tools = "Mouse";
+            //        Price = 5.000;
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid product code. Please enter a valid product code (1, 2, or 3).");
+            //        break;
+            //}
+
+            
+            //if (Procode >= 1 && Procode <= 3)
+            //{
+            //    double finalPrice = Price;
+
+               
+            //    if (hasCoupon)
+            //    {
+            //        double discount = Price * 0.10;
+            //        finalPrice = Price - discount;
+            //        Console.WriteLine($"\nCoupon applied! You saved: {discount:F3}");
+            //    }
 
                 
-                if (side1 == side2 && side2 == side3)
-                {
-                    Console.WriteLine("Type: Equilateral (all sides are equal).");
-                }
-                else
-                {
-                    
-                    if (side1 == side2 || side1 == side3 || side2 == side3)
-                    {
-                        Console.WriteLine("Type: Isosceles (exactly two sides are equal).");
-                    }
-                    else
-                    {
-                        
-                        Console.WriteLine("Type: Scalene (all sides are different).");
-                    }
-                }
-            }
-            else
-            {
-                
-                Console.WriteLine("\nError: These lengths do not form a valid triangle.");
-            }
+            //    Console.WriteLine("--- Receipt ---");
+            //    Console.WriteLine($"Product: {Tools}");
+            //    Console.WriteLine($"Original Price: {Price:F3}");
+            //    Console.WriteLine($"Final Amount to Pay: {finalPrice:F3}");
+            //}
 
 
 
@@ -341,6 +393,7 @@ namespace Task1
         }
         }
     }
+
 
     
 
