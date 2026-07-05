@@ -77,35 +77,54 @@
             //    Console.WriteLine("You are not eligible to vote.");
             //}
             ///////////////////////////////
-            //5-Voting Eligibility
+            //5-Grade Letter Lookup
             //some code to solve problem
-            Console.WriteLine("Enter a single character grade letter ('A', 'B' , 'C' , 'D' OR 'F'): ");
-            String gradeLetter = Console.ReadLine().ToUpper();
+            //Console.WriteLine("Enter a single character grade letter ('A', 'B' , 'C' , 'D' OR 'F'): ");
+            //String gradeLetter = Console.ReadLine().ToUpper();
 
-            if (gradeLetter == "A")
+            //if (gradeLetter == "A")
+            //{
+            //    Console.WriteLine("Excellent");
+            //}
+            //else if (gradeLetter == "B")
+            //{
+            //    Console.WriteLine("Good");
+            //}
+            //else if (gradeLetter == "C")
+            //{
+            //    Console.WriteLine("Average");
+            //}
+            //else if (gradeLetter == "D")
+            //{
+            //    Console.WriteLine("Below Average");
+            //}
+            //else if (gradeLetter == "F")
+            //{
+            //    Console.WriteLine("Failing");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid grade letter.");
+
+            //}
+            ///////////////////////////////
+            //6-Temperature Converte
+            //some code to solve problem
+            Console.WriteLine("Enter a temperature in Celsius : ");
+            double celsius = double.Parse(Console.ReadLine());
+            double fahrenheit = (celsius * 9 / 5) + 32;
+            Console.WriteLine("convert it to Fahrenheit : " + fahrenheit);
+            if (celsius < 10)
             {
-                Console.WriteLine("Excellent");
+                Console.WriteLine("The temperature is Cold.");
             }
-            else if (gradeLetter == "B")
+            else if (celsius <= 30)
             {
-                Console.WriteLine("Good");
-            }
-            else if (gradeLetter == "C")
-            {
-                Console.WriteLine("Average");
-            }
-            else if (gradeLetter == "D")
-            {
-                Console.WriteLine("Below Average");
-            }
-            else if (gradeLetter == "F")
-            {
-                Console.WriteLine("Failing");
+                Console.WriteLine("The temperature is Mild.");
             }
             else
             {
-                Console.WriteLine("Invalid grade letter.");
-
+                Console.WriteLine("The temperature is Hot.");
             }
         }
     }
