@@ -110,22 +110,53 @@
             ///////////////////////////////
             //6-Temperature Converte
             //some code to solve problem
-            Console.WriteLine("Enter a temperature in Celsius : ");
-            double celsius = double.Parse(Console.ReadLine());
-            double fahrenheit = (celsius * 9 / 5) + 32;
-            Console.WriteLine("convert it to Fahrenheit : " + fahrenheit);
-            if (celsius < 10)
+            //Console.WriteLine("Enter a temperature in Celsius : ");
+            //double celsius = double.Parse(Console.ReadLine());
+            //double fahrenheit = (celsius * 9 / 5) + 32;
+            //Console.WriteLine("convert it to Fahrenheit : " + fahrenheit);
+            //if (celsius < 10)
+            //{
+            //    Console.WriteLine("The temperature is Cold.");
+            //}
+            //else if (celsius <= 30)
+            //{
+            //    Console.WriteLine("The temperature is Mild.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The temperature is Hot.");
+            //}
+            ///////////////////////////////
+            //7- Movie Ticket Pricing
+            //some code to solve problem
+            Console.WriteLine("Enter your age: ");
+            int age = int.Parse(Console.ReadLine());
+            double price;
+            string category;
+
+            if (age >= 0 && age <= 12)
             {
-                Console.WriteLine("The temperature is Cold.");
+                category = "Children";
+                price = 2.000;
             }
-            else if (celsius <= 30)
+            else if (age >= 13 && age <= 59)
             {
-                Console.WriteLine("The temperature is Mild.");
+                category = "Adults";
+                price = 5.000;
+            }
+            else if (age >= 60)
+            {
+                category = "Seniors";
+                price = 3.000;
             }
             else
             {
-                Console.WriteLine("The temperature is Hot.");
+                Console.WriteLine("Invalid age entered.");
+                return;
             }
+
+            Console.WriteLine($"{category} — Price: {price.ToString("F3")} OMR");
+
         }
     }
 }
