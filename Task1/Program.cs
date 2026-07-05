@@ -347,7 +347,7 @@ namespace Task1
             //string Tools = "";
             //double Price = 0;
 
-            
+
             //switch (Procode)
             //{
             //    case 1:
@@ -367,12 +367,12 @@ namespace Task1
             //        break;
             //}
 
-            
+
             //if (Procode >= 1 && Procode <= 3)
             //{
             //    double finalPrice = Price;
 
-               
+
             //    if (hasCoupon)
             //    {
             //        double discount = Price * 0.10;
@@ -380,7 +380,7 @@ namespace Task1
             //        Console.WriteLine($"\nCoupon applied! You saved: {discount:F3}");
             //    }
 
-                
+
             //    Console.WriteLine("--- Receipt ---");
             //    Console.WriteLine($"Product: {Tools}");
             //    Console.WriteLine($"Original Price: {Price:F3}");
@@ -388,11 +388,42 @@ namespace Task1
             //}
 
 
+            ////////////////////////////
+            //Task 15-     University Admission Decision
+            //some code to solvr problem
 
+            Console.WriteLine("Enter program type ('S' for Science, 'A' for Arts): ");
+            char programType = char.Parse(Console.ReadLine().ToUpper());
 
-        }
+            Console.WriteLine("Enter your application score (0-4.0): ");
+            double applicationScore = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter your entrance exam score (0-100): ");
+            double entranceExamScore = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Do you have any extracurricular achievements? (yes/no): ");
+            bool hasExtracurricular = Console.ReadLine().Trim().ToLower() == "no";
+
+            switch (programType)
+            {
+                case 'A':
+                    if (applicationScore >= 3.5 && entranceExamScore >= 75)
+                    {
+                        Console.WriteLine("Congratulations! You are admitted to the Science program.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Sorry, you do not meet the admission criteria for the Science program.");
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Unknown program type. Please enter 'S' for Science or 'A' for Arts.");
+                    break;
+
+            }
         }
     }
+}
 
 
     
