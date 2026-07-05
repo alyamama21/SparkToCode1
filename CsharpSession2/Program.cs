@@ -1,0 +1,14 @@
+﻿using System.Diagnostics.Metrics;
+
+namespace CsharpSession2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            }
+    }
+    }
+
+

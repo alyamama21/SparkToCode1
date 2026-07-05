@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="CsharpSession2/CsharpSession2.csproj" />
   <Project Path="Task1/Task1.csproj" />
+  <Project Path="Task1Solution/Task1Solution.csproj" />
 </Solution>
