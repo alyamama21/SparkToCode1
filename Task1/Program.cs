@@ -217,42 +217,60 @@ namespace Task1
             ////////////////////////////
             //Task 10-    Mini Calculator
             //some code to solvr problem
-            Console.WriteLine("Enter First Number : ");
-            int num1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter First Number : ");
+            //int num1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter an operator (+, -, *, /): ");
-            char op = char.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter an operator (+, -, *, /): ");
+            //char op = char.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter Second Number :");
-            int num2 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter Second Number :");
+            //int num2 = int.Parse(Console.ReadLine());
 
-            
+            //switch (op)
+            //    {
+            //case '+':
+            //        Console.WriteLine("Addition: " + (num1 + num2));
+            //        break;
+            //    case '-':
+            //        Console.WriteLine("Subtraction: " + (num1 - num2));
+            //        break;
+            //    case '*':
+            //        Console.WriteLine("Multiplication: " + (num1 * num2));
+            //        break;
+            //    case '/':
+            //        Console.WriteLine("Divition: " + (num1 / num2));
+            //        break;
+            //    default:
+            //        Console.WriteLine("Unknown operator. Please enter a valid operator (+, -, *, /).");
+            //        break;
 
-            
-            switch (op)
-                {
-            case '+':
-                    Console.WriteLine("Addition: " + (num1 + num2));
-                    break;
-                case '-':
-                    Console.WriteLine("Subtraction: " + (num1 - num2));
-                    break;
-                case '*':
-                    Console.WriteLine("Multiplication: " + (num1 * num2));
-                    break;
-                case '/':
-                    Console.WriteLine("Divition: " + (num1 / num2));
-                    break;
-                default:
-                    Console.WriteLine("Unknown operator. Please enter a valid operator (+, -, *, /).");
-                    break;
+            ////////////////////////////
+            //Task 11-    Loan Eligibility System
+            //some code to solvr problem
 
+            Console.WriteLine("Enter your Age : ");
+            int age = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Enter your Monthly : ");
+            int monthlyIncome = int.Parse(Console.ReadLine());
 
-                }
+            Console.WriteLine("Do you have a current loan? (true/false) : ");
+            bool hasCurrentLoan = bool.Parse(Console.ReadLine());
+
+            if (age >= 21 && age <= 60 && monthlyIncome >= 400 && !hasCurrentLoan)
+            {
+                Console.WriteLine("You are eligible for a loan.");
             }
+            else
+            {
+                Console.WriteLine("You are not eligible for a loan.");
 
+
+            }
         }
+
     }
+}
+    
 
 
